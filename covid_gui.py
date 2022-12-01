@@ -16,7 +16,7 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets )
 server = app.server
 
 
-df = pd.read_excel("C:/Users/DELL/Downloads/saka.xlsx")
+df = pd.read_excel("saka.xlsx")
 
 a = np.round(df.describe().transpose(), 2)
 stats = pd.DataFrame(a)
